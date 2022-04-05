@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const express = require('express');
+const {logErrors, errorHandler, boomErrorHandler} = require('./src/handlers/errors.handler')
 const app = express()
 const routerApi = require("./src/routes");
 
@@ -15,5 +16,9 @@ mongoose
 
 /* Respuestas a solicitudes */
 app.use(express.json());
+app.use(logErrors)
+app.use(errorHandler)
+app.use(boomErrorHandler)
+
 /* Permitir hacer el llamado de los request */
 routerApi(app);

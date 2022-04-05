@@ -123,18 +123,18 @@ Content-Type: application/json
 GET http://localhost:5000/api/v1/superheroes_v2 HTTP/1.1
 
 ###
-GET http://localhost:5000/api/v1/superheroes_v2/623b266d9a9be6956e954e58 HTTP/1.1
+GET http://localhost:5000/api/v1/superheroes_v2/624c84e2c9e1539b6e052237 HTTP/1.1
 
 ###
-PUT http://localhost:5000/api/v1/superheroes_v2/623b266d9a9be6956e954e58 HTTP/1.1
+PUT http://localhost:5000/api/v1/superheroes_v2/624c7d743d99802ed4587338 HTTP/1.1
 Content-Type: application/json
 
 {
-  "superhero":"SuperHormiga",
-  "realname":"Bruce Wayne",
+  "superhero":"Batmancito",
+  "realname":"Bruce Wayneg",
   "superpower": "Be rich"
 }
 
 
 ###
-DELETE http://localhost:5000/api/v1/superheroes_v2/623b266d9a9be6956e954e58 HTTP/1.1
+DELETE http://localhost:5000/api/v1/superheroes_v2/624c7d743d99802ed4587339 HTTP/1.1
