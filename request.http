@@ -3,7 +3,7 @@ POST http://localhost:5000/api/v1/people/personBill HTTP/1.1
 Content-Type: application/json
 
 {
-    "name": "Jean Carlos",
+    "name": "Jean Carlos Mario",
     "lastname": "Ballesteros Zamora",
     "dni": "2354434",
     "address": {
@@ -17,7 +17,7 @@ Content-Type: application/json
 GET http://localhost:5000/api/v1/people HTTP/1.1
 
 ###
-GET http://localhost:5000/api/v1/people/623be9c2ed932cfcfc7988c8 HTTP/1.1
+GET http://localhost:5000/api/v1/people/624c7c95ee832926a832f1d9 HTTP/1.1
 
 
 ###
@@ -71,7 +71,7 @@ Content-Type: application/json
 GET http://localhost:5000/api/v1/superheroes HTTP/1.1
 
 ###
-GET http://localhost:5000/api/v1/superheroes/623be9f8ed932cfcfc7988d5 HTTP/1.1
+GET http://localhost:5000/api/v1/superheroes/623be9f8ed932cfcfc7988d7 HTTP/1.1
 
 ###
 PUT http://localhost:5000/api/v1/superheroes/623be9f8ed932cfcfc7988d7 HTTP/1.1
@@ -86,7 +86,7 @@ Content-Type: application/json
     },
     "superhero_sidekick": {
       "sidekick": "Robin",
-      "super_powers_sidekick": "Hacer nada"
+      "super_powers_sidekick": "Hacer nada, bro"
     }
 }
 
@@ -113,7 +113,7 @@ POST http://localhost:5000/api/v1/superheroes_v2/superhero_v2 HTTP/1.1
 Content-Type: application/json
 
 {
-  "superhero":"Superman",
+  "superhero":"Batman",
   "realname":"Bruce Wayne",
   "superpower": "Be rich"
 }
@@ -123,18 +123,18 @@ Content-Type: application/json
 GET http://localhost:5000/api/v1/superheroes_v2 HTTP/1.1
 
 ###
-GET http://localhost:5000/api/v1/superheroes_v2/623bed5f1795be9aa3c55e60 HTTP/1.1
+GET http://localhost:5000/api/v1/superheroes_v2/623b266d9a9be6956e954e58 HTTP/1.1
 
 ###
-PUT http://localhost:5000/api/v1/superheroes_v2/623bed5f1795be9aa3c55e60 HTTP/1.1
+PUT http://localhost:5000/api/v1/superheroes_v2/623b266d9a9be6956e954e58 HTTP/1.1
 Content-Type: application/json
 
 {
-  "superhero":"Supermancito",
+  "superhero":"SuperHormiga",
   "realname":"Bruce Wayne",
   "superpower": "Be rich"
 }
 
 
 ###
-DELETE http://localhost:5000/api/v1/superheroes_v2/623bed5f1795be9aa3c55e60 HTTP/1.1
+DELETE http://localhost:5000/api/v1/superheroes_v2/623b266d9a9be6956e954e58 HTTP/1.1
